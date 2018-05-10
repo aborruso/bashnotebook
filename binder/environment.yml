@@ -8,3 +8,4 @@ dependencies:
   - pip:
     - bash_kernel
     - csvkit
+    - cssselect
