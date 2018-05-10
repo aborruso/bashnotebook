@@ -3,4 +3,4 @@ cssselect
 csvkit
 matplotlib
 geopandas
-bash_kernel
+lxml
