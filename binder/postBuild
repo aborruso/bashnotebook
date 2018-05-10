@@ -1,3 +1,4 @@
 python -m bash_kernel.install
 go get github.com/ericchiang/pup
 chmod +x /home/jovyan/go/bin/pup
+export PATH="/home/jovyan/go/bin/pup:$PATH"
