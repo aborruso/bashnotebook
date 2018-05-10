@@ -1,6 +1,0 @@
-pandas
-cssselect
-csvkit
-matplotlib
-geopandas
-lxml
