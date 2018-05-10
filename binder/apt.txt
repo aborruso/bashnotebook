@@ -6,3 +6,5 @@ libxml2-dev
 libxslt1-dev
 python-dev
 python-lxml
+nodejs
+npm
