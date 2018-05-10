@@ -1,3 +1,4 @@
 python -m bash_kernel.install
 go get github.com/ericchiang/pup
+go get -u github.com/tomnomnom/gron
 npm install mapshaper
