@@ -7,3 +7,4 @@ dependencies:
   - geopandas
   - pip:
     - bash_kernel
+    - csvkit
