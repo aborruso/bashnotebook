@@ -1,3 +1,4 @@
 jq
 xmlstarlet
 golang-go
+gdal-bin
