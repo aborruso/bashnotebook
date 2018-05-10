@@ -8,3 +8,5 @@ chmod +x scrape
 mkdir -p ~/bin
 cp scrape ~/bin
 export PATH=$PATH:~/bin
+pip install bash_kernel
+python -m bash_kernel.install
