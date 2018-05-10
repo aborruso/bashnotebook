@@ -2,3 +2,8 @@ jq
 xmlstarlet
 golang-go
 gdal-bin
+libxml2-dev 
+libxslt1-dev
+python-dev
+python-lxml
+cssselect
