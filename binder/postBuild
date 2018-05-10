@@ -2,6 +2,3 @@ python -m bash_kernel.install
 go get github.com/ericchiang/pup
 chmod +x /home/jovyan/go/bin/pup
 export PATH="/home/jovyan/go/bin/pup:$PATH"
-add-apt-repository -y ppa:ubuntugis/ppa
-apt update 
-apt install gdal-bin
