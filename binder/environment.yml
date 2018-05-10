@@ -10,3 +10,4 @@ dependencies:
     - csvkit
     - lxml
     - ipython-sql
+    - yq
