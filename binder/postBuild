@@ -2,3 +2,9 @@ python -m bash_kernel.install
 go get github.com/ericchiang/pup
 chmod +x /home/jovyan/go/bin/pup
 export PATH="/home/jovyan/go/bin:$PATH"
+cd ~
+curl -sL "https://github.com/jeroenjanssens/data-science-at-the-command-line/raw/master/tools/scrape" > scrape
+chmod +x scrape
+mkdir -p ~/bin
+cp scrape ~/bin
+export PATH=$PATH:~/bin
