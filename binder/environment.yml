@@ -11,3 +11,4 @@ dependencies:
     - lxml
     - ipython-sql
     - yq
+    - httpie
