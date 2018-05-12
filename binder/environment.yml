@@ -10,9 +10,9 @@ dependencies:
   - vega_datasets
   - notebook
   - vega3
-  - csvkit 
   - pip:
     - bash_kernel
+    - csvkit
     - lxml
     - ipython-sql
     - yq
