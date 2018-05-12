@@ -25,6 +25,7 @@ Un hub di Jupyter Notebook con queste caratteristiche:
     - mapshaper
     - xmlstarlet
     - gdal
+    - csvs-to-sqlite
 - integrazioni notebook
     - ipython-sql
     - spatialite-bin
