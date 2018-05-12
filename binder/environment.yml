@@ -19,3 +19,4 @@ dependencies:
     - httpie
     - requests-html
     - csvs-to-sqlite
+    - goodtables
