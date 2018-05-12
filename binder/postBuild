@@ -18,11 +18,11 @@ wget http://www.gaia-gis.it/gaia-sins/libspatialite-sources/libspatialite-4.3.0.
 unzip -qq ./libspatialite-4.3.0.zip
 cd libspatialite-4.3.0
 export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
-./configure —enable-freexl=no
-sudo make install
+./configure
+make install
 cd /home/jovyan/local/
 wget http://www.gaia-gis.it/gaia-sins/spatialite-tools-sources/spatialite-tools-4.3.0.tar.gz
 tar -xzf ./spatialite-tools-4.3.0.tar.gz
 cd spatialite-tools-4.3.0
-./configure —enable-freexl=no
+./configure
 make install
