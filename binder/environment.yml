@@ -6,6 +6,10 @@ dependencies:
   - pandas
   - geopandas
   - beautifulsoup4
+  - altair
+  - vega_datasets
+  - notebook
+  - vega3
   - pip:
     - bash_kernel
     - csvkit
