@@ -9,7 +9,7 @@ ln -s /home/jovyan/go/bin/pup pup
 
 # sqlite e spatialite
 curl -sL "https://www.sqlite.org/2018/sqlite-autoconf-3230100.tar.gz" > /home/jovyan/local/sqlite-autoconf-3230100.tar.gz
-tar -xvzf ./sqlite-autoconf-3230100.tar.gz
+tar -xzf ./sqlite-autoconf-3230100.tar.gz
 cd /home/jovyan/local/sqlite-autoconf-3230100
 ./configure
 make install
@@ -22,7 +22,7 @@ export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
 sudo make install
 cd /home/jovyan/local/
 wget http://www.gaia-gis.it/gaia-sins/spatialite-tools-sources/spatialite-tools-4.3.0.tar.gz
-tar -xvzf ./spatialite-tools-4.3.0.tar.gz
+tar -xzf ./spatialite-tools-4.3.0.tar.gz
 cd spatialite-tools-4.3.0
 ./configure —enable-freexl=no
 make install
