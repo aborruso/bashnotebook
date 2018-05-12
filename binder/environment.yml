@@ -14,3 +14,4 @@ dependencies:
     - yq
     - httpie
     - requests-html
+    - csvs-to-sqlite

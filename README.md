@@ -27,6 +27,7 @@ Un hub di Jupyter Notebook con queste caratteristiche:
     - gdal
 - integrazioni notebook
     - ipython-sql
+    - spatialite-bin
 - altro
     - nodejs
     - npm
