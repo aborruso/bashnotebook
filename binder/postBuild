@@ -3,5 +3,5 @@ go get github.com/ericchiang/pup
 go get -u github.com/tomnomnom/gron
 npm install mapshaper
 cd /home/jovyan/locale/bin
-sudo ln -s /home/jovyan/node_modules/mapshaper mapshaper
-sudo ln -s /home/jovyan/go/bin/pup pup
+ln -s /home/jovyan/node_modules/mapshaper mapshaper
+ln -s /home/jovyan/go/bin/pup pup
