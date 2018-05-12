@@ -20,3 +20,4 @@ dependencies:
     - requests-html
     - csvs-to-sqlite
     - goodtables
+    - pyexcel-cli
