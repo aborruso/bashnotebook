@@ -5,6 +5,7 @@ dependencies:
   - matplotlib
   - pandas
   - geopandas
+  - beautifulsoup4
   - pip:
     - bash_kernel
     - csvkit
@@ -12,3 +13,4 @@ dependencies:
     - ipython-sql
     - yq
     - httpie
+    - requests-html
