@@ -3,6 +3,6 @@ go get github.com/ericchiang/pup
 go get -u github.com/tomnomnom/gron
 mkdir -p /home/jovyan/local/bin
 npm install mapshaper --prefix /home/jovyan/local/bin
-cd /home/jovyan/locale/bin
+cd /home/jovyan/local/bin
 ln -s /home/jovyan/local/bin/node_modules/mapshaper/bin/mapshaper mapshaper
 ln -s /home/jovyan/go/bin/pup pup
