@@ -4,5 +4,5 @@ go get -u github.com/tomnomnom/gron
 mkdir -p /home/jovyan/locale/bin
 npm install mapshaper --prefix /home/jovyan/locale/bin
 cd /home/jovyan/locale/bin
-ln -s /home/jovyan/locale/bin/node_modules/mapshaper mapshaper
+ln -s /home/jovyan/locale/bin/node_modules/mapshaper/bin/mapshaper mapshaper
 ln -s /home/jovyan/go/bin/pup pup
