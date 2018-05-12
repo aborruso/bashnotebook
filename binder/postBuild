@@ -9,21 +9,22 @@ ln -s /home/jovyan/go/bin/pup pup
 
 
 # sqlite e spatialite
-# curl -sL "https://www.sqlite.org/2018/sqlite-autoconf-3230100.tar.gz" > # /home/jovyan/local/sqlite-autoconf-3230100.tar.gz
-# tar -xzf ./sqlite-autoconf-3230100.tar.gz
-# cd /home/jovyan/local/sqlite-autoconf-3230100
-# ./configure
-# make install
-# cd /home/jovyan/local/
-# wget -q http://www.gaia-gis.it/gaia-sins/libspatialite-sources/libspatialite-4.3.0.zip
-# unzip -qq ./libspatialite-4.3.0.zip
-# cd libspatialite-4.3.0
-# export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
-# ./configure
-# make install
-# cd /home/jovyan/local/
-# wget -q http://www.gaia-gis.it/gaia-sins/spatialite-tools-sources/spatialite-tools-4.3.0.tar.gz
-# tar -xzf ./spatialite-tools-4.3.0.tar.gz
-# cd spatialite-tools-4.3.0
-# ./configure
-# make install
+cd /home/jovyan/local/
+wget -q "https://www.sqlite.org/2018/sqlite-autoconf-3230100.tar.gz"
+tar -xzf ./sqlite-autoconf-3230100.tar.gz
+cd sqlite-autoconf-3230100
+./configure
+make install
+cd /home/jovyan/local/
+wget -q http://www.gaia-gis.it/gaia-sins/libspatialite-sources/libspatialite-4.3.0.zip
+unzip -qq libspatialite-4.3.0.zip
+cd libspatialite-4.3.0
+export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
+./configure
+make install
+cd /home/jovyan/local/
+wget -q http://www.gaia-gis.it/gaia-sins/spatialite-tools-sources/spatialite-tools-4.3.0.tar.gz
+tar -xzf ./spatialite-tools-4.3.0.tar.gz
+cd spatialite-tools-4.3.0
+./configure
+make install

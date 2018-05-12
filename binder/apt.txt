@@ -9,6 +9,3 @@ python-lxml
 nodejs
 npm
 unzip
-spatialite
-libproj-dev
-libproj
