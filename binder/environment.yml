@@ -10,6 +10,7 @@ dependencies:
   - vega_datasets
   - notebook
   - vega3
+  - cython
   - pip:
     - bash_kernel
     - csvkit
@@ -21,3 +22,4 @@ dependencies:
     - csvs-to-sqlite
     - goodtables
     - pyexcel-cli
+    - contextily
