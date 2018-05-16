@@ -7,6 +7,7 @@ cd /home/jovyan/local/bin
 ln -s /home/jovyan/local/bin/node_modules/mapshaper/bin/mapshaper mapshaper
 ln -s /home/jovyan/go/bin/pup pup
 
+# test
 # sqlite e spatialite
 # cd /home/jovyan/local/
 # wget -q "https://www.sqlite.org/2018/sqlite-autoconf-3230100.tar.gz"
