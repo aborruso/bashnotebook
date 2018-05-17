@@ -12,15 +12,16 @@ dependencies:
   - vega3
   - cython
   - descartes
+  - cartopy
+  - contextily
+  - lxml
+  - csvkit
+  - httpie
   - pip:
     - bash_kernel
-    - csvkit
-    - lxml
     - ipython-sql
     - yq
-    - httpie
     - requests-html
     - csvs-to-sqlite
     - goodtables
     - pyexcel-cli
-    - contextily
