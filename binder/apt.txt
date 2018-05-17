@@ -11,3 +11,5 @@ npm
 unzip
 spatialite-bin
 libproj-dev
+libjson0
+libjson0-dev
