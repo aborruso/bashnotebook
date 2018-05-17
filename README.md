@@ -2,7 +2,7 @@
 
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/aborruso/bashnotebook/master)
 
-Un hub di Jupyter Notebook con queste caratteristiche:
+Un hub di Jupyter Notebook con queste caratteristiche: 
 
 - kernel
     - python 3
