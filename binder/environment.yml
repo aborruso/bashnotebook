@@ -25,3 +25,4 @@ dependencies:
     - csvs-to-sqlite
     - goodtables
     - pyexcel-cli
+    - daff
