@@ -2,10 +2,10 @@
 python -m bash_kernel.install
 go get github.com/ericchiang/pup
 go get -u github.com/tomnomnom/gron
-# to create a folder that will be available in the PATH
-mkdir -p /home/jovyan/local/bin
-npm install mapshaper --prefix /home/jovyan/local/bin
-cd /home/jovyan/local/bin
-# to let mapshaper and pup be available in the PATH ("/home/jovyan/local/bin" is in the PATH)
-ln -s /home/jovyan/local/bin/node_modules/mapshaper/bin/mapshaper mapshaper
+# to create a folder for node installation
+mkdir -p ~/.local/bin
+npm install mapshaper --prefix ~/.local/bin
+cd ~/.local/
+# to let mapshaper and pup be available in the PATH ("~/.local/" is in the PATH)
+ln -s /home/jovyan/.local/bin/node_modules/mapshaper/bin/mapshaper mapshaper
 ln -s /home/jovyan/go/bin/pup pup
