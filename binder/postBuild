@@ -7,5 +7,5 @@ mkdir -p ~/.local/bin
 npm install mapshaper --prefix ~/.local/bin
 cd ~/.local/bin
 # to let mapshaper and pup be available in the PATH ("~/.local/bin" is in the PATH)
-ln -s /home/jovyan/.local/bin/node_modules/mapshaper/bin/mapshaper mapshaper
-ln -s /home/jovyan/go/bin/pup pup
+ln -s ~/.local/bin/node_modules/mapshaper/bin/mapshaper mapshaper
+ln -s ~/go/bin/pup pup
