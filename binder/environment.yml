@@ -18,6 +18,8 @@ dependencies:
   - csvkit
   - httpie
   - ipywidgets
+  - gdal
+  - poppler
   - pip:
     - bash_kernel
     - ipython-sql
