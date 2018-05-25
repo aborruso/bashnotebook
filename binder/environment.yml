@@ -20,9 +20,9 @@ dependencies:
   - ipywidgets
   - gdal
   - poppler
+  - ipython-sql
   - pip:
     - bash_kernel
-    - ipython-sql
     - yq
     - requests-html
     - csvs-to-sqlite
