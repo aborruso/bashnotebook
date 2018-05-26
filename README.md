@@ -27,9 +27,9 @@ Un hub di Jupyter Notebook con queste caratteristiche:
     - gdal
     - csvs-to-sqlite
     - pyexcel-cli
+    - spatialite-bin
 - integrazioni notebook
     - ipython-sql
-    - spatialite-bin
 - altro
     - nodejs
     - npm
