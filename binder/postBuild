@@ -9,3 +9,4 @@ cd ~/.local/bin
 # to let mapshaper and pup be available in the PATH ("~/.local/bin" is in the PATH)
 ln -s ~/.local/bin/node_modules/mapshaper/bin/mapshaper mapshaper
 ln -s ~/go/bin/pup pup
+updatedb

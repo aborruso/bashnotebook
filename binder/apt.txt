@@ -10,3 +10,4 @@ npm
 unzip
 spatialite-bin
 libsqlite3-mod-spatialite
+locate
