@@ -5,6 +5,7 @@ go get -u github.com/tomnomnom/gron
 # to create a folder for node installation
 mkdir -p ~/.local/bin
 npm install mapshaper --prefix ~/.local/bin
+npm install xml2json-command --prefix ~/.local/bin
 cd ~/.local/bin
 # to let mapshaper and pup be available in the PATH ("~/.local/bin" is in the PATH)
 ln -s ~/.local/bin/node_modules/mapshaper/bin/mapshaper mapshaper
