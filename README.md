@@ -28,6 +28,7 @@ Un hub di Jupyter Notebook con queste caratteristiche:
     - csvs-to-sqlite
     - pyexcel-cli
     - spatialite-bin
+    - xml2json
 - integrazioni notebook
     - ipython-sql
 - altro
