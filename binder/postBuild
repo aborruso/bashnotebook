@@ -9,6 +9,7 @@ npm install xml2json-command --prefix ~/.local/bin
 cd ~/.local/bin
 # to let mapshaper and pup be available in the PATH ("~/.local/bin" is in the PATH)
 ln -s ~/.local/bin/node_modules/mapshaper/bin/mapshaper mapshaper
+ln -s ~/.local/bin/node_modules/.bin/xml2json xml2json
 ln -s ~/go/bin/pup pup
 # updatedb --output ~/.locate.db
 # alias mylocate="locate --database=$HOME/.locate.db"
