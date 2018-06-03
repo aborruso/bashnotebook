@@ -21,6 +21,7 @@ dependencies:
   - gdal
   - poppler
   - ipython-sql
+  - chardetect
   - pip:
     - bash_kernel
     - yq
