@@ -29,6 +29,7 @@ Un hub di Jupyter Notebook con queste caratteristiche:
     - pyexcel-cli
     - spatialite-bin
     - xml2json
+    - chardect
 - integrazioni notebook
     - ipython-sql
 - altro
