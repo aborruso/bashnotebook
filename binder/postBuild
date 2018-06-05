@@ -1,21 +1,20 @@
 # to install bash kernel
 python -m bash_kernel.install
+# to install pup and gron
 go get github.com/ericchiang/pup
 go get -u github.com/tomnomnom/gron
-# to create a folder for node installation
+# to create a folder that is in the PATH
 mkdir -p ~/.local/bin
+# to install mapshaper and xml2json in ~/.local/bin
 npm install mapshaper --prefix ~/.local/bin
 npm install xml2json-command --prefix ~/.local/bin
-cd ~/.local/bin
+# to install fd
 curl -OsL "https://github.com/sharkdp/fd/releases/download/v7.0.0/fd-v7.0.0-x86_64-unknown-linux-gnu.tar.gz"
 tar -xzvf fd-v7.0.0-x86_64-unknown-linux-gnu.tar.gz
-# to let mapshaper and pup be available in the PATH ("~/.local/bin" is in the PATH)
+chmod +x ~/.local/bin/fd-v7.0.0-x86_64-unknown-linux-gnu/fd
+# to create alias for pup, mapshaper, xml2json, fd ("~/.local/bin" is in the PATH)
+cd ~/.local/bin
 ln -s ~/.local/bin/node_modules/mapshaper/bin/mapshaper mapshaper
 ln -s ~/.local/bin/node_modules/.bin/xml2json xml2json
 ln -s ~/go/bin/pup pup
-chmod +x ~/.local/bin/fd-v7.0.0-x86_64-unknown-linux-gnu/fd
 ln -s ~/.local/bin/fd-v7.0.0-x86_64-unknown-linux-gnu/fd fd
-# updatedb --output ~/.locate.db
-# alias mylocate="locate --database=$HOME/.locate.db"
-# curl -sL "https://github.com/sharkdp/fd/releases/download/v7.0.0/fd-musl_7.0.0_amd64.deb" >~/.local/bin/fd-musl_7.0.0_amd64.deb
-# dpkg -i ~/.local/bin/fd-musl_7.0.0_amd64.deb
