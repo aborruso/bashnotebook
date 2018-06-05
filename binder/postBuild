@@ -7,10 +7,14 @@ mkdir -p ~/.local/bin
 npm install mapshaper --prefix ~/.local/bin
 npm install xml2json-command --prefix ~/.local/bin
 cd ~/.local/bin
+curl -OsL "https://github.com/sharkdp/fd/releases/download/v7.0.0/fd-v7.0.0-x86_64-unknown-linux-gnu.tar.gz"
+tar -xzvf fd-v7.0.0-x86_64-unknown-linux-gnu.tar.gz
 # to let mapshaper and pup be available in the PATH ("~/.local/bin" is in the PATH)
 ln -s ~/.local/bin/node_modules/mapshaper/bin/mapshaper mapshaper
 ln -s ~/.local/bin/node_modules/.bin/xml2json xml2json
 ln -s ~/go/bin/pup pup
+chmod +x ~/.local/bin/fd-v7.0.0-x86_64-unknown-linux-gnu/fd
+ln -s ~/.local/bin/fd-v7.0.0-x86_64-unknown-linux-gnu/fd fd
 # updatedb --output ~/.locate.db
 # alias mylocate="locate --database=$HOME/.locate.db"
 # curl -sL "https://github.com/sharkdp/fd/releases/download/v7.0.0/fd-musl_7.0.0_amd64.deb" >~/.local/bin/fd-musl_7.0.0_amd64.deb
