@@ -9,6 +9,7 @@ mkdir -p ~/.local/bin
 npm install mapshaper --prefix ~/.local/bin
 npm install xml2json-command --prefix ~/.local/bin
 # to install fd
+cd ~/.local/bin
 curl -OsL "https://github.com/sharkdp/fd/releases/download/v7.0.0/fd-v7.0.0-x86_64-unknown-linux-gnu.tar.gz"
 tar -xzvf fd-v7.0.0-x86_64-unknown-linux-gnu.tar.gz
 chmod +x ~/.local/bin/fd-v7.0.0-x86_64-unknown-linux-gnu/fd
