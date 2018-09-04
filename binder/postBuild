@@ -20,11 +20,5 @@ ln -s ~/.local/bin/node_modules/.bin/xml2json xml2json
 ln -s ~/go/bin/pup pup
 ln -s ~/.local/bin/fd-v7.0.0-x86_64-unknown-linux-gnu/fd fd
 updatedb --output=$HOME/.locate.db
+# to use locate in shell to search in what it's just installerd use "mylocate filename"
 echo 'alias mylocate="locate --database=$HOME/.locate.db"' >> ~/.bashrc
-cd ~
-git clone https://github.com/johnkerl/miller
-cd miller
-autoreconf -fiv
-./configure
-make
-make install
