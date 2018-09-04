@@ -13,12 +13,18 @@ cd ~/.local/bin
 curl -OsL "https://github.com/sharkdp/fd/releases/download/v7.0.0/fd-v7.0.0-x86_64-unknown-linux-gnu.tar.gz"
 tar -xzvf fd-v7.0.0-x86_64-unknown-linux-gnu.tar.gz
 chmod +x ~/.local/bin/fd-v7.0.0-x86_64-unknown-linux-gnu/fd
+# install gron
+cd ~/.local/bin
+wget https://github.com/tomnomnom/gron/releases/download/v0.6.0/gron-linux-amd64-0.6.0.tgz
+tar -xzvf gron-linux-amd64-0.6.0.tgz
+chmod +x ./gron
+rm ./gron-linux-amd64-0.6.0.tgz
 # to create alias for pup, mapshaper, xml2json, fd ("~/.local/bin" is in the PATH)
 cd ~/.local/bin
 ln -s ~/.local/bin/node_modules/mapshaper/bin/mapshaper mapshaper
 ln -s ~/.local/bin/node_modules/.bin/xml2json xml2json
 ln -s ~/go/bin/pup pup
 ln -s ~/.local/bin/fd-v7.0.0-x86_64-unknown-linux-gnu/fd fd
-updatedb --output=$HOME/.locate.db
 # to use locate in shell to search in what it's just installerd use "mylocate filename"
+updatedb --output=$HOME/.locate.db
 echo 'alias mylocate="locate --database=$HOME/.locate.db"' >> ~/.bashrc
