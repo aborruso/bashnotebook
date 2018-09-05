@@ -1,6 +1,6 @@
 channels:
   - conda-forge
-  - conda-forge/label/dev
+  - defaults
 dependencies:
   - matplotlib
   - pandas
