@@ -7,6 +7,7 @@ python-dev
 python-lxml
 nodejs
 unzip
+spatialite-bin
 libsqlite3-mod-spatialite
 locate
 moreutils
