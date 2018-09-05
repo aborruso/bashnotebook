@@ -18,7 +18,7 @@ dependencies:
   - csvkit
   - httpie
   - ipywidgets
-  - libgdal=2.2.4=ha6e4b24_6
+  - libgdal
   - gdal
   - poppler
   - ipython-sql
