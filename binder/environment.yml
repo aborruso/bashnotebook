@@ -18,11 +18,11 @@ dependencies:
   - csvkit
   - httpie
   - ipywidgets
+  - libgdal=2.2.4=ha6e4b24_6
   - gdal
   - poppler
   - ipython-sql
   - chardet
-  - libgdal=2.2.4=ha6e4b24_6
   - pip:
     - bash_kernel
     - yq
