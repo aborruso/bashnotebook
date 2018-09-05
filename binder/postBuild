@@ -19,6 +19,12 @@ wget https://github.com/tomnomnom/gron/releases/download/v0.6.0/gron-linux-amd64
 tar -xzvf gron-linux-amd64-0.6.0.tgz
 chmod +x ./gron
 rm ./gron-linux-amd64-0.6.0.tgz
+# install mlr
+cd ~/.local/bin
+wget http://dev.ondata.it/projs/people/andy/utility/mlr.tgz
+tar -xzvf mlr.tgz
+chmod +x ./mlr
+rm ./mlr.tgz
 # to create alias for pup, mapshaper, xml2json, fd ("~/.local/bin" is in the PATH)
 cd ~/.local/bin
 ln -s ~/.local/bin/node_modules/mapshaper/bin/mapshaper mapshaper
