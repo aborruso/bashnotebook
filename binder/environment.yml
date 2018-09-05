@@ -18,9 +18,6 @@ dependencies:
   - csvkit
   - httpie
   - ipywidgets
-  - libgdal
-  - gdal
-  - poppler
   - ipython-sql
   - chardet
   - pip:
