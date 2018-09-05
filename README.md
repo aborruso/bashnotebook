@@ -30,6 +30,8 @@ Un hub di Jupyter Notebook con queste caratteristiche:
     - spatialite-bin
     - xml2json
     - chardet
+    - gron
+    - miller
 - integrazioni notebook
     - ipython-sql
 - altro
