@@ -20,6 +20,7 @@ dependencies:
   - ipywidgets
   - ipython-sql
   - chardet
+  - visidata
   - pip:
     - bash_kernel
     - yq
