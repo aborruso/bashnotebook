@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# clono il repo con i contenuti
+cd ~
+git clone https://github.com/aborruso/bashnotebookFile.git contenuti
+
+exec "$@"
