@@ -37,3 +37,5 @@ ln -s ~/.local/bin/fd-v7.0.0-x86_64-unknown-linux-gnu/fd fd
 # to use locate in shell to search in what it's just installerd use "mylocate filename"
 updatedb --output=$HOME/.locate.db
 echo 'alias mylocate="locate --database=$HOME/.locate.db"' >> ~/.bashrc
+# clono il repo con i contenuti
+git clone https://github.com/aborruso/bashnotebookFile.git contenuti
