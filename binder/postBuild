@@ -37,3 +37,20 @@ ln -s ~/.local/bin/fd-v7.0.0-x86_64-unknown-linux-gnu/fd fd
 # to use locate in shell to search in what it's just installerd use "mylocate filename"
 updatedb --output=$HOME/.locate.db
 echo 'alias mylocate="locate --database=$HOME/.locate.db"' >> ~/.bashrc
+# install spatialite 5
+cd ~/.local/bin
+git clone https://git.osgeo.org/gitea/rttopo/librttopo.git
+cd ./librttopo
+./autogen.sh
+./configure
+make
+make check
+sudo make install
+cd ..
+rm ./librttopo
+wget http://www.gaia-gis.it/gaia-sins/libspatialite-sources/libspatialite-5.0.0-beta0.tar.gz
+tar zxf libspatialite-5.0.0-beta0.tar.gz
+cd ./libspatialite-5.0.0-beta0
+./configure --enable-rttopo=yes --enable-gcp=yes
+make -j8
+sudo make install-strip
