@@ -39,6 +39,9 @@ updatedb --output=$HOME/.locate.db
 echo 'alias mylocate="locate --database=$HOME/.locate.db"' >> ~/.bashrc
 # install spatialite 5
 cd ~/.local/bin
+wget "https://www.gaia-gis.it/gaia-sins/freexl-1.0.5.tar.gz" && tar zxf freexl-1.0.5.tar.gz \
+    && cd freexl-1.0.5 && ./configure && make && make install
+cd ~/.local/bin
 git clone https://git.osgeo.org/gitea/rttopo/librttopo.git
 cd ./librttopo
 ./autogen.sh
