@@ -14,3 +14,13 @@ automake
 autoconf
 libtool
 flex
+build-essential
+wget
+libproj-dev
+libgeos-dev
+libsqlite3-dev
+zlib1g-dev
+pkg-config
+git
+python3-dev
+sqlite3
