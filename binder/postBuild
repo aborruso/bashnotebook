@@ -51,7 +51,9 @@ rm -r ./librttopo
 wget http://www.gaia-gis.it/gaia-sins/libspatialite-sources/libspatialite-5.0.0-beta0.tar.gz
 tar zxf libspatialite-5.0.0-beta0.tar.gz
 cd ./libspatialite-5.0.0-beta0
-./configure --prefix=$CONDA_DIR
+export "CFLAGS=-I/srv/conda/include" 
+export "LDFLAGS=-L/srv/conda/lib" 
+./configure --prefix=$CONDA_DIR --enable-rttopo=yes --enable-gcp=yes
 make -j8
 make install-strip
 
