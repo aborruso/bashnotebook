@@ -35,6 +35,7 @@ Un hub di Jupyter Notebook con queste caratteristiche:
     - miller
     - visidata
     - enca
+    - scrape-cli
 - integrazioni notebook
     - ipython-sql
 - altro
