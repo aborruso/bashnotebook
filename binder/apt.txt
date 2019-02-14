@@ -25,3 +25,5 @@ git
 sqlite3
 libfreexl-dev 
 enca
+libpcre3-dev
+libpcre3
