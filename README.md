@@ -33,6 +33,7 @@ Un hub di Jupyter Notebook con queste caratteristiche:
     - chardet
     - gron
     - miller
+    - visidata
 - integrazioni notebook
     - ipython-sql
 - altro
