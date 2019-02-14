@@ -1,44 +1,54 @@
 # to install bash kernel
 python -m bash_kernel.install
+
 # to install pup and gron
 go get github.com/ericchiang/pup
 go get -u github.com/tomnomnom/gron
+
 # to create a folder that is in the PATH
 mkdir -p ~/.local/bin
+
 # to install mapshaper and xml2json in ~/.local/bin
 npm install mapshaper --prefix ~/.local/bin
 npm install xml2json-command --prefix ~/.local/bin
+
 # to install fd
 cd ~/.local/bin
 curl -OsL "https://github.com/sharkdp/fd/releases/download/v7.0.0/fd-v7.0.0-x86_64-unknown-linux-gnu.tar.gz"
 tar -xzvf fd-v7.0.0-x86_64-unknown-linux-gnu.tar.gz
 chmod +x ~/.local/bin/fd-v7.0.0-x86_64-unknown-linux-gnu/fd
+
 # install gron
 cd ~/.local/bin
 wget https://github.com/tomnomnom/gron/releases/download/v0.6.0/gron-linux-amd64-0.6.0.tgz
 tar -xzvf gron-linux-amd64-0.6.0.tgz
 chmod +x ./gron
 rm ./gron-linux-amd64-0.6.0.tgz
+
 # install mlr
 cd ~/.local/bin
 wget https://github.com/johnkerl/miller/releases/download/5.4.0/mlr.linux.x86_64
 mv ./mlr.linux.x86_64 ./mlr
 chmod +x ./mlr
+
 # install scrape-cli
 cd ~/.local/bin
 wget https://github.com/aborruso/scrape-cli/releases/download/v1.0/scrape
 chmod +x ./scrape
+
 # to create alias for pup, mapshaper, xml2json, fd ("~/.local/bin" is in the PATH)
 cd ~/.local/bin
 ln -s ~/.local/bin/node_modules/mapshaper/bin/mapshaper mapshaper
 ln -s ~/.local/bin/node_modules/.bin/xml2json xml2json
 ln -s ~/go/bin/pup pup
 ln -s ~/.local/bin/fd-v7.0.0-x86_64-unknown-linux-gnu/fd fd
+
 # install sqlite3-pcre
 cd ~/.local/bin
 git clone https://github.com/oojah/sqlite3-pcre.git
 cd ./sqlite3-pcre
 make
+
 # install spatialite 5
 cd ~/.local/bin
 wget "https://www.gaia-gis.it/gaia-sins/freexl-1.0.5.tar.gz" && tar zxf freexl-1.0.5.tar.gz \
@@ -61,6 +71,7 @@ export "LDFLAGS=-L/srv/conda/lib"
 ./configure --prefix=$CONDA_DIR --enable-rttopo=yes --enable-gcp=yes
 make -j8
 make install-strip
+
 # let sqlite autoloads some modules
 cd ~
 cat > .sqliterc <<EOF
@@ -68,6 +79,6 @@ cat > .sqliterc <<EOF
 .load /home/jovyan/.local/bin/sqlite3-pcre/pcre.so
 EOF
 
-# to use locate in shell to search in what it's just installerd use "mylocate filename"
+# to use locate in shell and search in what it's just installed use "mylocate filename"
 updatedb --output=$HOME/.locate.db
 echo 'alias mylocate="locate --database=$HOME/.locate.db"' >> ~/.bashrc
