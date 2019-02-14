@@ -23,5 +23,5 @@ zlib1g-dev
 pkg-config
 git
 sqlite3
-sqlite3-dev 
+libsqlite3-dev
 libfreexl-dev 
