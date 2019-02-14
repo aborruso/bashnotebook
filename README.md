@@ -7,6 +7,7 @@ Un hub di Jupyter Notebook con queste caratteristiche:
 - kernel
     - python 3
     - bash
+    - R
 - moduli python
     - matplotlib
     - pandas
