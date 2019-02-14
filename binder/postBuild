@@ -40,12 +40,12 @@ echo 'alias mylocate="locate --database=$HOME/.locate.db"' >> ~/.bashrc
 # install spatialite 5
 cd ~/.local/bin
 wget "https://www.gaia-gis.it/gaia-sins/freexl-1.0.5.tar.gz" && tar zxf freexl-1.0.5.tar.gz \
-    && cd freexl-1.0.5 && ./configure && make && make install
+    && cd freexl-1.0.5 && ./configure --prefix=$CONDA_DIR && make && make install
 cd ~/.local/bin
 git clone https://git.osgeo.org/gitea/rttopo/librttopo.git
 cd ./librttopo
 ./autogen.sh
-./configure
+./configure --prefix=$CONDA_DIR
 make
 make check
 make install
@@ -54,6 +54,6 @@ rm -r ./librttopo
 wget http://www.gaia-gis.it/gaia-sins/libspatialite-sources/libspatialite-5.0.0-beta0.tar.gz
 tar zxf libspatialite-5.0.0-beta0.tar.gz
 cd ./libspatialite-5.0.0-beta0
-./configure --enable-rttopo=yes --enable-gcp=yes
+./configure --enable-rttopo=yes --enable-gcp=yes --prefix=$CONDA_DIR
 make -j8
 make install-strip
