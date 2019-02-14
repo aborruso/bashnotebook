@@ -27,3 +27,4 @@ libfreexl-dev
 enca
 libpcre3-dev
 libpcre3
+nano
