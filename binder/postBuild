@@ -62,11 +62,11 @@ export "LDFLAGS=-L/srv/conda/lib"
 make -j8
 make install-strip
 # let sqlite autoloads some modules
-cd ~
-cat > .sqliterc <<EOF
-.load /srv/conda/lib/mod_spatialite.so
-.load /srv/conda/lib/libgdal.so
-EOF
+#cd ~
+#cat > .sqliterc <<EOF
+#.load /srv/conda/lib/mod_spatialite.so
+#.load /srv/conda/lib/libgdal.so
+#EOF
 
 # to use locate in shell to search in what it's just installerd use "mylocate filename"
 updatedb --output=$HOME/.locate.db
