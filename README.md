@@ -34,6 +34,7 @@ Un hub di Jupyter Notebook con queste caratteristiche:
     - gron
     - miller
     - visidata
+    - enca
 - integrazioni notebook
     - ipython-sql
 - altro
