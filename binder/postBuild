@@ -34,6 +34,11 @@ ln -s ~/.local/bin/node_modules/mapshaper/bin/mapshaper mapshaper
 ln -s ~/.local/bin/node_modules/.bin/xml2json xml2json
 ln -s ~/go/bin/pup pup
 ln -s ~/.local/bin/fd-v7.0.0-x86_64-unknown-linux-gnu/fd fd
+# install sqlite3-pcre
+cd ~/.local/bin
+git clone https://github.com/oojah/sqlite3-pcre.git
+cd ./sqlite3-pcre
+make
 # install spatialite 5
 cd ~/.local/bin
 wget "https://www.gaia-gis.it/gaia-sins/freexl-1.0.5.tar.gz" && tar zxf freexl-1.0.5.tar.gz \
@@ -56,6 +61,12 @@ export "LDFLAGS=-L/srv/conda/lib"
 ./configure --prefix=$CONDA_DIR --enable-rttopo=yes --enable-gcp=yes
 make -j8
 make install-strip
+# let sqlite autoloads some modules
+cd ~
+cat > .sqliterc <<EOF
+.load /srv/conda/lib/mod_spatialite.so
+.load /srv/conda/lib/libgdal.so
+EOF
 
 # to use locate in shell to search in what it's just installerd use "mylocate filename"
 updatedb --output=$HOME/.locate.db
