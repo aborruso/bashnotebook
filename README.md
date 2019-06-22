@@ -7,7 +7,6 @@ Un hub di Jupyter Notebook con queste caratteristiche:
 - kernel
     - python 3
     - bash
-    - R
 - moduli python
     - matplotlib
     - pandas
@@ -36,6 +35,7 @@ Un hub di Jupyter Notebook con queste caratteristiche:
     - visidata
     - enca
     - scrape-cli
+    - visidata
 - integrazioni notebook
     - ipython-sql
 - altro
