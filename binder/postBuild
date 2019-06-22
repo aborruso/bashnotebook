@@ -36,6 +36,13 @@ cd ~/.local/bin
 wget https://github.com/aborruso/scrape-cli/releases/download/v1.0/scrape
 chmod +x ./scrape
 
+# install xsv
+cd ~/.local/bin
+wget "https://github.com/BurntSushi/xsv/releases/download/0.13.0/xsv-0.13.0-x86_64-unknown-linux-musl.tar.gz"
+tar -xzf ./xsv-0.13.0-x86_64-unknown-linux-musl.tar.gz
+chmod +x ./xsv
+rm ./xsv-0.13.0-x86_64-unknown-linux-musl.tar.gz
+
 # to create alias for pup, mapshaper, xml2json, fd ("~/.local/bin" is in the PATH)
 cd ~/.local/bin
 ln -s ~/.local/bin/node_modules/mapshaper/bin/mapshaper mapshaper
@@ -66,8 +73,8 @@ rm -r ./librttopo
 wget http://www.gaia-gis.it/gaia-sins/libspatialite-sources/libspatialite-5.0.0-beta0.tar.gz
 tar zxf libspatialite-5.0.0-beta0.tar.gz
 cd ./libspatialite-5.0.0-beta0
-export "CFLAGS=-I/srv/conda/include" 
-export "LDFLAGS=-L/srv/conda/lib" 
+export "CFLAGS=-I/srv/conda/include"
+export "LDFLAGS=-L/srv/conda/lib"
 ./configure --prefix=$CONDA_DIR --enable-rttopo=yes --enable-gcp=yes
 make -j8
 make install-strip
