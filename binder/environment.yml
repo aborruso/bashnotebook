@@ -29,3 +29,4 @@ dependencies:
     - goodtables
     - pyexcel-cli
     - daff
+    - visidata
