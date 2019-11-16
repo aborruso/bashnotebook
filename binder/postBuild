@@ -1,4 +1,4 @@
-# to install bash kernel
+# to install bash kernel 
 python -m bash_kernel.install
 
 # to install pup and gron
