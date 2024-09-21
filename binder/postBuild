@@ -1,5 +1,5 @@
-# to install bash kernel 
-python -m bash_kernel.install
+# to install bash kernel
+python3 -m bash_kernel.install
 
 # to install pup and gron
 go get github.com/ericchiang/pup
